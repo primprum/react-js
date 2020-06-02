@@ -18,6 +18,12 @@ function App() {
     setRed(!isRed) // flip the state
   }
 
+  const [users] = useState([
+    { name: "Ed", message: "Hello There!" },
+    { name: "John", message: "Hello I am John!" },
+    { name: "Traversy", message: "Hello I am awesome!" }
+  ]);
+
   return (
     <div className="my-tweets">
       <h1>Hello React!</h1>
@@ -31,6 +37,10 @@ function App() {
       <button onClick={increment}>Increment</button>
       <h1>{count}</h1>
       <h1 className={isRed ? 'red' : ''}>This color should changed!</h1>
+
+      {users.map(user => (
+        <Tweet name={user.name} message={user.message}/>
+      ))}
     </div>
   );
 }
