@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Tweet from './Tweet';
 
 function App() {
   const counter = 3;
@@ -13,7 +14,9 @@ function App() {
       <h1>Hello React!</h1>
       <button>{counter}</button>
       <button onClick={hello}>Show Hello</button>
+      <Tweet />
     </div>
+
   );
 }
 
