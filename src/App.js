@@ -14,6 +14,8 @@ function App() {
 
   const increment = () => {
     setCount(count + 1);
+    // setRed(true);
+    setRed(!isRed) // flip the state
   }
 
   return (
@@ -28,6 +30,7 @@ function App() {
 
       <button onClick={increment}>Increment</button>
       <h1>{count}</h1>
+      <h1 className={isRed ? 'red' : ''}>This color should changed!</h1>
     </div>
   );
 }
