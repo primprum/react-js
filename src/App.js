@@ -10,13 +10,15 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="my-tweets">
       <h1>Hello React!</h1>
       <button>{counter}</button>
       <button onClick={hello}>Show Hello</button>
-      <Tweet />
-    </div>
 
+      <Tweet name="John" message="Good morning" likes={400}/>
+      <Tweet name="Michael" message="Good afternoon" likes={500}/>
+      <Tweet name="Adam" message="Good evening" likes={700}/>
+    </div>
   );
 }
 
