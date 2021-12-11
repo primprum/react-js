@@ -1,7 +1,7 @@
 // learn on how props actually works
 import React from "react";
 
-const Props = ({ name, education }) => {
+const UsingProps = ({ name, education }) => {
   return (
     <div>
       <h3>Name: {name}</h3>
@@ -10,4 +10,4 @@ const Props = ({ name, education }) => {
   );
 };
 
-export default Props;
+export default UsingProps;

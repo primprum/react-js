@@ -1,14 +1,14 @@
 import React from "react";
-import Props from "./components/Props";
+import UsingProps from "./components/Props";
 import ReactState from "./components/ReactState";
 
-function App() {
+const App = () => {
   return (
     <>
-      <Props name="Prima Wirawan" education="Universitas Sriwijaya" />
+      <UsingProps name="Prima Wirawan" education="Universitas Sriwijaya" />
       <ReactState />
     </>
   );
-}
+};
 
 export default App;
