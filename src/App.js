@@ -7,6 +7,8 @@ import PropsDefault from "./components/PropsDefault";
 
 import ReactState from "./components/ReactState";
 
+import MapFunc from "./components/MapFunc";
+
 const App = () => {
   return (
     <>
@@ -15,6 +17,7 @@ const App = () => {
       <UsingProps name={1} /> {/* this will return error on console.log */}
       <PropsDefault title="This is the Props title" name="This is the props name" />
       <ReactState />
+      <MapFunc />
     </>
   );
 };
